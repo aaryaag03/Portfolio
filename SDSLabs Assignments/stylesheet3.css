@@ -1,0 +1,133 @@
+@keyframes flip {
+    0% {
+        background-color: rgb(228, 127, 127);
+    }
+    17% {
+        background-color: rgb(237, 172, 107);
+    }
+    34% {
+        background-color: rgb(255, 252, 117);
+    }
+    51% {
+        background-color: rgb(107, 214, 155);
+    }
+    68% {
+        background-color: rgb(119, 173, 219);
+    }
+    85% {
+        background-color: rgb(211, 135, 226);
+    }
+    100% {
+        background-color: rgb(228, 127, 127);
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}
+
+body {
+    animation-name: flip;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+table {
+    margin: 4vw 28vw 1vw;
+}
+
+input {
+    display: inline-block;
+    width: 30vw;
+    height: 3vw;
+    margin: 1vw;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2vw;
+}
+
+td {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2vw;
+    width: 10vw;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 4vw;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 3.5s steps(40, end) infinite, blinker .75s step-end infinite;
+}
+
+img {
+    width: 8vw;
+    height: auto;
+    margin: 3vw 6vw;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+#insta {
+    margin-left: 30vw;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#mail {
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.button {
+    height: 7vw;
+    width: 19vw;
+    background-color: rgb(0, 0, 0, 0);
+    border: 1vw solid black;
+    text-align: center;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+    transition-property: background-color;
+    margin: 0vw 40vw 2vw;
+    visibility: hidden;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
