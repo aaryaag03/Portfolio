@@ -1,0 +1,153 @@
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(25, 25, 115, 0.5);
+    }
+    
+    .white {
+        margin: 0cm;
+        padding: 0cm 3vw;
+        border: 0cm;
+        display: inline-block;
+        background-color: white;
+        color: rgb(29, 5, 5);
+        width: 42vw;
+        font-size: 3vw;
+        font-family: 'Signika Negative', sans-serif;
+        position: relative;
+        left: -0.5vw;
+        /* DOUBT */
+    }
+    
+    .headings {
+        font-family: 'Anton', sans-serif;
+        font-size: 7vw;
+        letter-spacing: 0.001vw;
+        animation: bounceIn 2s;
+    }
+    
+    p {
+        text-align: left;
+    }
+    
+    .flexbox {
+        width: fit-content;
+        display: flex;
+        padding: 2vw;
+        background-color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #mm {
+        animation-delay: 3s;
+    }
+    
+    #titleproject {
+        font-size: 6vw;
+        text-align: center;
+    }
+    
+    .Contact {
+        font-family: 'Anton', sans-serif;
+        font-size: 4vw;
+        color: antiquewhite;
+        text-align: center;
+    }
+    
+    .button {
+        height: 7vw;
+        width: 19vw;
+        background-color: rgb(0, 0, 0, 0);
+        border: 1vw solid black;
+        text-align: center;
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 2vw;
+        letter-spacing: 0.3vw;
+        transition-property: background-color;
+        margin: 0vw 40vw 5vw;
+        visibility: hidden;
+        animation-name: appear;
+        animation-duration: 1.5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes appear {
+        0% {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+        100% {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+    
+    .ending {
+        margin: 0cm;
+        padding: 0cm 3vw;
+        border: 0cm;
+        display: inline-block;
+        /* background-color: white; */
+        color: rgb(29, 5, 5);
+        width: 100vw;
+        font-size: 3vw;
+        font-family: 'Signika Negative', sans-serif;
+        position: relative;
+        left: -0.5vw;
+    }
+    
+    .button:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    @media only screen and (max-width: 1422px) {
+        p {
+            text-align: left;
+            position: 0;
+        }
+        .white {
+            margin: 0;
+            padding: 0;
+            width: 90vw;
+            font-size: 10vw;
+        }
+        .headings {
+            font-size: 14vw;
+        }
+        .flexbox {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            width: fit-content;
+        }
+        #typing {
+            width: 219vw;
+        }
+        #dance {
+            width: 219vw;
+        }
+    }
+    
+    @media only screen and (min-width: 380px) {
+        .white {
+            margin: 4vw;
+        }
+    }
